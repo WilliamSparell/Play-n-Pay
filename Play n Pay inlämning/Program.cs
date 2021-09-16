@@ -51,7 +51,7 @@ namespace Play_n_Pay_inlämning
                 //Kollar så att talet är godkänt
                 if (bet < 50)
                 {
-                    timesPlayed = 0;//Skippar spela igen frågan om man skriver fel här
+                    timesPlayed = 0;
                     Console.WriteLine("Du måste minst satsa 50 pix");
                     continue;
                 }
@@ -85,6 +85,8 @@ namespace Play_n_Pay_inlämning
 
                 //slumpa tärningar
                 int dice = rnd.Next(1, 7);
+
+                Console.WriteLine("Tärningarna landade på:");
 
                 for (int i = 0; i < dices; i++)
                 {
